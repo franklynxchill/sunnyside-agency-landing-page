@@ -1,0 +1,502 @@
+@font-face {
+  font-family: "Fraunces 9pt Soft";
+  src: url("/assets/fonts/Fraunces9ptSoft-Black.woff2") format("woff2"), url("/assets/fonts/Fraunces9ptSoft-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces 9pt Soft";
+  src: url("/assets/fonts/Fraunces9ptSoft-Bold.woff2") format("woff2"), url("/assets/fonts/Fraunces9ptSoft-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("/assets/fonts/Barlow-SemiBold.woff2") format("woff2"), url("/assets/fonts/Barlow-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fraunces 9pt Soft";
+  font-weight: 700;
+}
+
+p {
+  font-family: "Barlow";
+}
+
+.intro {
+  background-image: url("/images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 38rem;
+  position: relative;
+}
+@media (width > 45em) {
+  .intro {
+    background-image: url("/images/desktop/image-header.jpg");
+    height: 40.84rem;
+    background-size: cover;
+  }
+}
+.intro ul {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.intro a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.intro .btn {
+  background: white;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 20rem;
+  font-weight: 700;
+  font-family: "Fraunces 9pt Soft";
+  text-transform: uppercase;
+}
+.intro .btn:hover {
+  color: white;
+  background-color: hsl(198, 62%, 26%);
+}
+@media (width < 45em) {
+  .intro .btn {
+    background: hsl(51, 100%, 49%);
+    color: black;
+  }
+}
+.intro h1 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding-top: 4rem;
+  font-size: 3.2rem;
+  width: 22rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-weight: 900;
+}
+@media (width > 45em) {
+  .intro h1 {
+    width: unset;
+    font-size: 4rem;
+  }
+}
+.intro .down-arrow {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-65%, -50%);
+}
+@media (width > 45em) {
+  .intro .down-arrow {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+@media (width > 45em) {
+  header {
+    padding: 2rem 4rem;
+  }
+}
+header button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+@media (width > 45em) {
+  header button {
+    display: none;
+  }
+}
+header ul {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  list-style: none;
+  font-family: "Barlow";
+}
+@media (width < 45em) {
+  header ul {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
+
+@media (width < 45em) {
+  .menu-btn {
+    background-color: white;
+    position: absolute;
+    top: 8rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 21.6rem;
+    padding: 5rem 2rem;
+    z-index: 30;
+    display: none;
+  }
+  .menu-btn a {
+    color: black;
+  }
+}
+
+.toggle-menu {
+  display: block;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 100%;
+}
+@media (width > 45em) {
+  .content {
+    grid-template-columns: 50% 50%;
+  }
+}
+.content .context {
+  padding: 2rem;
+  text-align: center;
+}
+@media (width > 45em) {
+  .content .context {
+    padding: 8rem;
+    text-align: left;
+  }
+}
+.content .context h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  width: 19rem;
+  margin: 0 auto;
+  margin-bottom: 1.1rem;
+}
+@media (width > 45em) {
+  .content .context h2 {
+    width: 28rem;
+    padding-right: 8rem;
+  }
+}
+.content .context p {
+  font-size: 1.1rem;
+  width: 20rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: hsl(210, 4%, 67%);
+}
+@media (width > 45em) {
+  .content .context p {
+    width: 28rem;
+  }
+}
+.content .context button {
+  text-transform: uppercase;
+  font-family: "Fraunces 9pt Soft";
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.content .context .btn-one {
+  position: relative;
+}
+.content .context .btn-one hr {
+  position: absolute;
+  top: 14px;
+  left: -10px;
+  z-index: -1;
+  width: 10rem;
+  height: 0.9rem;
+  border-radius: 12px;
+  border: none;
+  background-color: hsla(51, 100%, 49%, 0.4);
+  transition: all ease-in 0.25s;
+}
+.content .context .btn-one hr:hover {
+  background-color: hsl(51, 100%, 49%);
+}
+.content .context .btn-two {
+  position: relative;
+}
+.content .context .btn-two hr {
+  position: absolute;
+  top: 14px;
+  left: -10px;
+  z-index: -1;
+  width: 10rem;
+  height: 0.9rem;
+  border-radius: 12px;
+  border: none;
+  background-color: hsla(7, 99%, 70%, 0.4);
+  transition: all ease-in 0.25s;
+}
+.content .context .btn-two hr:hover {
+  background-color: hsl(7, 99%, 70%);
+}
+.content .transform {
+  background-image: url("/images/mobile/image-transform.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 22.84rem;
+}
+@media (width > 45em) {
+  .content .transform {
+    background-image: url("/images/desktop/image-transform.jpg");
+    height: 32rem;
+    background-size: contain;
+  }
+}
+.content .stand-out {
+  background-image: url("/images/mobile/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 22.9rem;
+}
+@media (width > 45em) {
+  .content .stand-out {
+    background-image: url("/images/desktop/image-stand-out.jpg");
+    height: 32rem;
+    background-size: contain;
+  }
+}
+.content .graphic {
+  background-image: url("/images/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 43.9rem;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+}
+@media (width > 45em) {
+  .content .graphic {
+    background-image: url("/images/desktop/image-graphic-design.jpg");
+    height: 32rem;
+    background-size: contain;
+  }
+}
+.content .graphic h3 {
+  padding-top: 31rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+@media (width > 45em) {
+  .content .graphic h3 {
+    padding-top: 20rem;
+  }
+}
+.content .graphic p {
+  width: 25rem;
+  margin: auto;
+  padding: 1rem 0 5rem;
+  font-size: 1.18rem;
+  line-height: 1.6;
+}
+.content .photography {
+  background-image: url("/images/mobile/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 43.9rem;
+  text-align: center;
+  color: hsl(198, 62%, 26%);
+}
+@media (width > 45em) {
+  .content .photography {
+    background-image: url("/images/desktop/image-photography.jpg");
+    height: 32rem;
+    background-size: contain;
+  }
+}
+.content .photography h3 {
+  padding-top: 31rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+@media (width > 45em) {
+  .content .photography h3 {
+    padding-top: 20rem;
+  }
+}
+.content .photography p {
+  width: 25rem;
+  margin: 0 auto;
+  padding: 1rem 0 5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.testimonials {
+  margin: 6rem 0 1rem;
+  text-align: center;
+}
+.testimonials h2 {
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+  color: hsl(232, 10%, 55%);
+}
+.testimonials .individuals {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 66%;
+}
+@media (width > 45em) {
+  .testimonials .individuals {
+    grid-template-columns: 21.5rem 21.5rem 21.5rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+.testimonials .individuals img {
+  width: 4rem;
+  border-radius: 50%;
+}
+.testimonials .individuals p {
+  margin: 2rem 0 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: hsl(210, 4%, 67%);
+}
+.testimonials .individuals span {
+  display: block;
+  margin-top: 2rem;
+  font-family: "Fraunces 9pt Soft";
+  color: black;
+}
+.testimonials .individuals h5 {
+  color: hsl(210, 4%, 67%);
+  font-family: "Barlow";
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .milkbottles {
+  background-image: url("/images/mobile/image-gallery-milkbottles.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 14rem;
+  width: 13.72rem;
+}
+@media (width > 45em) {
+  .gallery .milkbottles {
+    background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+    height: 25rem;
+    width: 19.155rem;
+    background-size: cover;
+  }
+}
+.gallery .orange {
+  background-image: url("/images/mobile/image-gallery-orange.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 14rem;
+  width: 13.72rem;
+}
+@media (width > 45em) {
+  .gallery .orange {
+    background-image: url("/images/desktop/image-gallery-orange.jpg");
+    height: 25rem;
+    width: 19.155rem;
+    background-size: cover;
+  }
+}
+.gallery .cone {
+  background-image: url("/images/mobile/image-gallery-cone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 14rem;
+  width: 13.72rem;
+}
+@media (width > 45em) {
+  .gallery .cone {
+    background-image: url("/images/desktop/image-gallery-cone.jpg");
+    height: 25rem;
+    width: 19.155rem;
+    background-size: cover;
+  }
+}
+.gallery .sugar-cubes {
+  background-image: url("/images/mobile/image-gallery-sugar-cubes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 14rem;
+  width: 13.72rem;
+}
+@media (width > 45em) {
+  .gallery .sugar-cubes {
+    background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+    height: 25rem;
+    width: 19.155rem;
+    background-size: cover;
+  }
+}
+
+footer {
+  background-color: hsl(168, 34%, 41%);
+  text-align: center;
+  padding: 4rem 0;
+}
+footer .nav-btn {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
+  margin: 1rem 0 4rem;
+}
+@media (width > 45em) {
+  footer .nav-btn {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+}
+footer .nav-btn a {
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow";
+}
+footer .nav-btn a:hover {
+  color: white;
+}
+footer .social-icon {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  justify-content: center;
+}
+footer .social-icon a {
+  color: hsl(167, 40%, 24%);
+  font-size: 2rem;
+  font-family: "Barlow";
+}
+footer .social-icon a:hover {
+  color: white;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

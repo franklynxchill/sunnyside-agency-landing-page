@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Fraunces 9pt Soft';
+  src: url('/assets/fonts/Fraunces9ptSoft-Black.woff2') format('woff2'),
+       url('/assets/fonts/Fraunces9ptSoft-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces 9pt Soft';
+  src: url('/assets/fonts/Fraunces9ptSoft-Bold.woff2') format('woff2'),
+       url('/assets/fonts/Fraunces9ptSoft-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/assets/fonts/Barlow-SemiBold.woff2') format('woff2'), 
+       url('/assets/fonts/Barlow-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$graphic-design-text: hsl(167, 40%, 24%);
+$photography-text: hsl(198, 62%, 26%);
+$footer: hsl(168, 34%, 41%);
+
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
