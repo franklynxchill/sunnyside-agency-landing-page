@@ -171,6 +171,7 @@ header ul {
 }
 @media (width > 45em) {
   .content {
+    display: none;
     grid-template-columns: 50% 50%;
   }
 }
@@ -236,6 +237,11 @@ header ul {
 .content .context .btn-one hr:hover {
   background-color: hsl(51, 100%, 49%);
 }
+@media (width > 45em) {
+  .content .context .btn-one hr {
+    left: 2px;
+  }
+}
 .content .context .btn-two {
   position: relative;
 }
@@ -253,6 +259,11 @@ header ul {
 }
 .content .context .btn-two hr:hover {
   background-color: hsl(7, 99%, 70%);
+}
+@media (width > 45em) {
+  .content .context .btn-two hr {
+    left: 2px;
+  }
 }
 .content .transform {
   background-image: url("/images/mobile/image-transform.jpg");
@@ -358,7 +369,7 @@ header ul {
 }
 @media (width > 45em) {
   .testimonials .individuals {
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 27% 27% 27%;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }

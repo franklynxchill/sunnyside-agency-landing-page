@@ -141,6 +141,7 @@ header {
   grid-template-columns: 100%;
 
   @media (width > 45em) {
+    display: none;
     grid-template-columns:  50% 50%;
   }
 
@@ -201,6 +202,9 @@ header {
         &:hover {
           background-color: $Yellow;
         }
+        @media (width > 45em) {
+          left: 2px;
+        }
       }
     }
     .btn-two {
@@ -218,6 +222,9 @@ header {
         transition: all ease-in .25s;
         &:hover {
           background-color: $Soft-red;
+        }
+        @media (width > 45em) {
+          left: 2px;
         }
       }
     }
@@ -324,7 +331,7 @@ header {
     justify-content: center;
     grid-template-columns: 73%;
     @media (width > 45em) {
-      grid-template-columns: 30% 30% 30%;
+      grid-template-columns: 27% 27% 27%;
       column-gap: 2rem;
     }
 
