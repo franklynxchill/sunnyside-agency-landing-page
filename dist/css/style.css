@@ -306,8 +306,7 @@ header ul {
 .content .graphic h3 {
   padding-top: 31rem;
   font-weight: 900;
-  font-size: 1.5rem;
-  display: none;
+  font-size: 1.3rem;
 }
 @media (width > 45em) {
   .content .graphic h3 {
@@ -318,9 +317,8 @@ header ul {
   width: 25rem;
   margin: auto;
   padding: 1rem 0 5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.6;
-  display: none;
 }
 .content .photography {
   background-image: url("/images/mobile/image-photography.jpg");
@@ -339,8 +337,7 @@ header ul {
 .content .photography h3 {
   padding-top: 31rem;
   font-weight: 900;
-  font-size: 1.5rem;
-  display: none;
+  font-size: 1.3rem;
 }
 @media (width > 45em) {
   .content .photography h3 {
@@ -351,9 +348,8 @@ header ul {
   width: 25rem;
   margin: 0 auto;
   padding: 1rem 0 5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.6;
-  display: none;
 }
 
 .testimonials {
