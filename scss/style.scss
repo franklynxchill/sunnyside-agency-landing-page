@@ -202,9 +202,9 @@ header {
         &:hover {
           background-color: $Yellow;
         }
-        @media (width > 45em) {
-          left: 2rem;
-        }
+      }
+      @media (width > 45em) {
+        margin-left: 3rem;
       }
     }
     .btn-two {
@@ -223,9 +223,9 @@ header {
         &:hover {
           background-color: $Soft-red;
         }
-        @media (width > 45em) {
-          left: 2rem;
-        }
+      }
+      @media (width > 45em) {
+        margin-left: 3rem;
       }
     }
   }
@@ -329,7 +329,7 @@ header {
   .individuals {
     display: grid;
     justify-content: center;
-    grid-template-columns: 79%;
+    grid-template-columns: 82%;
     @media (width > 45em) {
       grid-template-columns: 24% 24% 24%;
       column-gap: 2rem;

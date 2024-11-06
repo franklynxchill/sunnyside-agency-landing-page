@@ -238,8 +238,8 @@ header ul {
   background-color: hsl(51, 100%, 49%);
 }
 @media (width > 45em) {
-  .content .context .btn-one hr {
-    left: 2rem;
+  .content .context .btn-one {
+    margin-left: 3rem;
   }
 }
 .content .context .btn-two {
@@ -261,8 +261,8 @@ header ul {
   background-color: hsl(7, 99%, 70%);
 }
 @media (width > 45em) {
-  .content .context .btn-two hr {
-    left: 2rem;
+  .content .context .btn-two {
+    margin-left: 3rem;
   }
 }
 .content .transform {
@@ -365,7 +365,7 @@ header ul {
 .testimonials .individuals {
   display: grid;
   justify-content: center;
-  grid-template-columns: 79%;
+  grid-template-columns: 82%;
 }
 @media (width > 45em) {
   .testimonials .individuals {
