@@ -306,7 +306,7 @@ header ul {
 .content .graphic h3 {
   padding-top: 31rem;
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 @media (width > 45em) {
   .content .graphic h3 {
@@ -316,8 +316,8 @@ header ul {
 .content .graphic p {
   width: 25rem;
   margin: auto;
-  padding: 1rem 0 5rem;
-  font-size: 0.8rem;
+  padding: 1rem 3rem 5rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 .content .photography {
@@ -337,7 +337,7 @@ header ul {
 .content .photography h3 {
   padding-top: 31rem;
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 @media (width > 45em) {
   .content .photography h3 {
@@ -347,8 +347,8 @@ header ul {
 .content .photography p {
   width: 25rem;
   margin: 0 auto;
-  padding: 1rem 0 5rem;
-  font-size: 0.8rem;
+  padding: 1rem 2rem 5rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
