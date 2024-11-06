@@ -137,11 +137,11 @@ header {
 
 
 .content {
-  display: grid;
+  display: none;
   grid-template-columns: 100%;
 
   @media (width > 45em) {
-    display: none;
+    display: grid;
     grid-template-columns:  50% 50%;
   }
 
@@ -331,7 +331,7 @@ header {
     justify-content: center;
     grid-template-columns: 73%;
     @media (width > 45em) {
-      grid-template-columns: 27% 27% 27%;
+      grid-template-columns: 25% 25% 25%;
       column-gap: 2rem;
     }
 
