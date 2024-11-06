@@ -268,6 +268,7 @@ header {
       padding-top: 31rem;
       font-weight: 900;
       font-size: 1.5rem;
+      display: none;
       @media (width > 45em) {
         padding-top: 20rem;
       }
@@ -279,6 +280,7 @@ header {
       padding: 1rem 0 5rem;
       font-size: 1rem;
       line-height: 1.6;
+      display: none;
     }
   }
 
@@ -299,6 +301,7 @@ header {
       padding-top: 31rem;
       font-weight: 900;
       font-size: 1.5rem;
+      display: none;
       @media (width > 45em) {
         padding-top: 20rem;
       }
@@ -310,7 +313,7 @@ header {
       padding: 1rem 0 5rem;
       font-size: 1rem;
       line-height: 1.6;
-      
+      display: none;
     }
   }
 }
@@ -328,7 +331,7 @@ header {
   .individuals {
     display: grid;
     justify-content: center;
-    grid-template-columns: 81%;
+    grid-template-columns: 85%;
     @media (width > 45em) {
       grid-template-columns: 24% 24% 24%;
       column-gap: 2rem;
