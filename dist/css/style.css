@@ -166,12 +166,11 @@ header ul {
 }
 
 .content {
-  display: none;
+  display: grid;
   grid-template-columns: 100%;
 }
 @media (width > 45em) {
   .content {
-    display: grid;
     grid-template-columns: 50% 50%;
   }
 }
@@ -239,7 +238,7 @@ header ul {
 }
 @media (width > 45em) {
   .content .context .btn-one {
-    margin-left: 3rem;
+    margin-left: 5rem;
   }
 }
 .content .context .btn-two {
@@ -262,7 +261,7 @@ header ul {
 }
 @media (width > 45em) {
   .content .context .btn-two {
-    margin-left: 3rem;
+    margin-left: 5rem;
   }
 }
 .content .transform {
@@ -318,7 +317,7 @@ header ul {
   width: 25rem;
   margin: auto;
   padding: 1rem 0 5rem;
-  font-size: 1.18rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 .content .photography {
@@ -349,7 +348,7 @@ header ul {
   width: 25rem;
   margin: 0 auto;
   padding: 1rem 0 5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -365,7 +364,7 @@ header ul {
 .testimonials .individuals {
   display: grid;
   justify-content: center;
-  grid-template-columns: 82%;
+  grid-template-columns: 81%;
 }
 @media (width > 45em) {
   .testimonials .individuals {

@@ -137,11 +137,10 @@ header {
 
 
 .content {
-  display: none;
+  display: grid;
   grid-template-columns: 100%;
 
   @media (width > 45em) {
-    display: grid;
     grid-template-columns:  50% 50%;
   }
 
@@ -204,7 +203,7 @@ header {
         }
       }
       @media (width > 45em) {
-        margin-left: 3rem;
+        margin-left: 5rem;
       }
     }
     .btn-two {
@@ -225,7 +224,7 @@ header {
         }
       }
       @media (width > 45em) {
-        margin-left: 3rem;
+        margin-left: 5rem;
       }
     }
   }
@@ -278,7 +277,7 @@ header {
       width: 25rem;
       margin: auto;
       padding: 1rem 0 5rem;
-      font-size: 1.18rem;
+      font-size: 1rem;
       line-height: 1.6;
     }
   }
@@ -309,7 +308,7 @@ header {
       width: 25rem;
       margin: 0 auto;
       padding: 1rem 0 5rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.6;
       
     }
@@ -329,7 +328,7 @@ header {
   .individuals {
     display: grid;
     justify-content: center;
-    grid-template-columns: 82%;
+    grid-template-columns: 81%;
     @media (width > 45em) {
       grid-template-columns: 24% 24% 24%;
       column-gap: 2rem;
