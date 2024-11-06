@@ -203,7 +203,7 @@ header {
           background-color: $Yellow;
         }
         @media (width > 45em) {
-          left: 2px;
+          left: 2rem;
         }
       }
     }
@@ -224,7 +224,7 @@ header {
           background-color: $Soft-red;
         }
         @media (width > 45em) {
-          left: 2px;
+          left: 2rem;
         }
       }
     }
@@ -329,9 +329,9 @@ header {
   .individuals {
     display: grid;
     justify-content: center;
-    grid-template-columns: 73%;
+    grid-template-columns: 79%;
     @media (width > 45em) {
-      grid-template-columns: 25% 25% 25%;
+      grid-template-columns: 24% 24% 24%;
       column-gap: 2rem;
     }
 

@@ -239,7 +239,7 @@ header ul {
 }
 @media (width > 45em) {
   .content .context .btn-one hr {
-    left: 2px;
+    left: 2rem;
   }
 }
 .content .context .btn-two {
@@ -262,7 +262,7 @@ header ul {
 }
 @media (width > 45em) {
   .content .context .btn-two hr {
-    left: 2px;
+    left: 2rem;
   }
 }
 .content .transform {
@@ -365,11 +365,11 @@ header ul {
 .testimonials .individuals {
   display: grid;
   justify-content: center;
-  grid-template-columns: 73%;
+  grid-template-columns: 79%;
 }
 @media (width > 45em) {
   .testimonials .individuals {
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 24% 24% 24%;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
