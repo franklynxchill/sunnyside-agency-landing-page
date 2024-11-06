@@ -148,7 +148,7 @@ header {
     padding: 2rem;
     text-align: center;
     @media (width > 45em) {
-      padding: 8rem;
+      padding: 8rem 3rem;
       text-align: left;
     }
 
@@ -226,38 +226,36 @@ header {
   .transform {
     background-image: url('/images/mobile/image-transform.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 22.84rem;
     @media (width > 45em) {
       background-image: url('/images/desktop/image-transform.jpg');
       height: 32rem;
-      background-size: contain;
+      background-size: cover;
     }
   }
 
   .stand-out {
     background-image: url('/images/mobile/image-stand-out.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 22.9rem;
     @media (width > 45em) {
       background-image: url('/images/desktop/image-stand-out.jpg');
       height: 32rem;
-      background-size: contain;
     }
   }
 
   .graphic {
     background-image: url('/images/mobile/image-graphic-design.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 43.9rem;
     text-align: center;
     color: $graphic-design-text;
     @media (width > 45em) {
       background-image: url('/images/desktop/image-graphic-design.jpg');
       height: 32rem;
-      background-size: contain;
     }
 
     h3 {
@@ -281,7 +279,7 @@ header {
   .photography {
     background-image: url('/images/mobile/image-photography.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 43.9rem;
     text-align: center;
     color: $photography-text;
@@ -289,7 +287,6 @@ header {
     @media (width > 45em) {
       background-image: url('/images/desktop/image-photography.jpg');
       height: 32rem;
-      background-size: contain;
     }
 
     h3 {
@@ -325,9 +322,9 @@ header {
   .individuals {
     display: grid;
     justify-content: center;
-    grid-template-columns: 66%;
+    grid-template-columns: 73%;
     @media (width > 45em) {
-      grid-template-columns: 21.5rem 21.5rem 21.5rem;
+      grid-template-columns: 30% 30% 30%;
       column-gap: 2rem;
     }
 
@@ -338,7 +335,7 @@ header {
 
     p {
       margin: 2rem 0 1rem;
-      font-size: 1.1rem;
+      font-size: 1.03rem;
       line-height: 1.6;
       color: $Grayish-blue;
     }
@@ -358,19 +355,23 @@ header {
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @media (width > 45em) {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
 
   .milkbottles {
     background-image: url('/images/mobile/image-gallery-milkbottles.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 14rem;
-    width: 13.72rem;
+    width: auto;
     @media (width > 45em) {
       background-image: url('/images/desktop/image-gallery-milkbottles.jpg');
       height: 25rem;
-      width: 19.155rem;
       background-size: cover;
     }
   }
@@ -379,12 +380,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 14rem;
-    width: 13.72rem;
+    width: auto;
     
     @media (width > 45em) {
       background-image: url('/images/desktop/image-gallery-orange.jpg');
       height: 25rem;
-      width: 19.155rem;
       background-size: cover;
     }
   }
@@ -394,11 +394,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 14rem;
-    width: 13.72rem;
+    width: auto;
     @media (width > 45em) {
       background-image: url('/images/desktop/image-gallery-cone.jpg');
       height: 25rem;
-      width: 19.155rem;
       background-size: cover;
     }
   }
@@ -408,11 +407,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 14rem;
-    width: 13.72rem;
+    width: auto;
     @media (width > 45em) {
       background-image: url('/images/desktop/image-gallery-sugarcubes.jpg');
       height: 25rem;
-      width: 19.155rem;
       background-size: cover;
     }
   }
