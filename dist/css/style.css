@@ -314,11 +314,16 @@ header ul {
   }
 }
 .content .graphic p {
-  width: 25rem;
+  width: 21rem;
   margin: auto;
-  padding: 1rem 3rem 5rem;
+  padding: 1rem 0 5rem;
   font-size: 1rem;
   line-height: 1.6;
+}
+@media (width > 45em) {
+  .content .graphic p {
+    width: 25rem;
+  }
 }
 .content .photography {
   background-image: url("/images/mobile/image-photography.jpg");
@@ -345,11 +350,16 @@ header ul {
   }
 }
 .content .photography p {
-  width: 25rem;
+  width: 21rem;
   margin: 0 auto;
-  padding: 1rem 2rem 5rem;
+  padding: 1rem 0 5rem;
   font-size: 1rem;
   line-height: 1.6;
+}
+@media (width > 45em) {
+  .content .photography p {
+    width: 25rem;
+  }
 }
 
 .testimonials {
